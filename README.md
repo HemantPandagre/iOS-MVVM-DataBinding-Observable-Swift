@@ -2,7 +2,7 @@
 
  **Observer** is a behavioral design pattern that allows some objects to notify other objects about changes in their state.
 
-![img](https://user-images.githubusercontent.com/68166401/175144954-08409bdb-239b-49f1-92c4-709eafab54d6.png)
+![img](https://user-images.githubusercontent.com/68166401/175145118-9b444bbe-a7eb-4003-876a-973e50434aae.png)
 
 # Project
   This is a demonstration of the MVVM project in which 'observers' are used to update on the view.

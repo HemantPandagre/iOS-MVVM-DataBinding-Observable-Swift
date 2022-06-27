@@ -47,6 +47,20 @@ class Observable<T> {
 }
 ```
 
+## Declaration && Implementation
+ ```swift
+var observable: Observable<Int> = Observable(0)
+```
+
+```swift
+self.observable.value = count
+```
+
+```swift
+observable.bind({ count in
+   print("Current count is = \(count)")
+})
+```
 
 ## Developed by
   Hemant Pandagre, hemantpandagre.techie@gmail.com

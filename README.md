@@ -53,7 +53,7 @@ var observable: Observable<Int> = Observable(0)
 ```
 
 ```swift
-self.observable.value = count
+observable.value = count
 ```
 
 ```swift

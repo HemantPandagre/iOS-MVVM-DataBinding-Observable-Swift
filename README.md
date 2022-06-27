@@ -23,6 +23,30 @@
 
 ![animation](https://user-images.githubusercontent.com/68166401/175144877-3004d1dc-0118-435d-a86a-4a2540c3c198.gif)
 
+
+```swift
+import Foundation
+
+class Observable<T> {
+    private var listener: ((T) -> Void)?
+    
+    var value: T {
+        didSet {
+            listener?(value)
+        }
+    }
+    
+    init(_ value: T) {
+        self.value = value
+    }
+
+    func bind(_ closure: @escaping (T) -> Void) {
+        listener = closure
+    }
+}
+```
+
+
 ## Developed by
   Hemant Pandagre, hemantpandagre.techie@gmail.com
 
